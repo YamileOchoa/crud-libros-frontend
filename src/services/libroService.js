@@ -1,7 +1,7 @@
 // src/services/libroService.js
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/libros"; // ajusta si usas otra URL
+const API_URL = "https://crud-libros-backend.onrender.com"; // ajusta si usas otra URL
 
 export const getLibros = () => axios.get(API_URL);
 export const getLibro = (id) => axios.get(`${API_URL}/${id}`);
